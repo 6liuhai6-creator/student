@@ -1,6 +1,7 @@
 # -*-coding:utf-8 -*-
 import io
 import sys
+import ast
 #改变标准输出的默认编码
 sys.stdout=io.TextIOWrapper(sys.stdout.buffer,encoding='utf8')
 
@@ -24,7 +25,7 @@ while goin_system =='y':
     read_1 = f.readline()
     z = {}                                          #打开文件   转为字典
     while read_1 != '':
-        read_2 = eval(read_1.replace("\n",''))
+        read_2 = ast.literal_eval(read_1.replace("\n",""))
         z = z | read_2     
         dict_1 = z                                                #dict_1为最终结果
         
