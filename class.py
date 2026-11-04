@@ -179,7 +179,7 @@ while goin_system =='y':
             
     
             
-    goin_system = input('\n是否退出系统(n/y) ')
+    goin_system = input('\n是否继续使用系统？(y=继续，n=退出) ')
 
 print('')    
 print('欢迎下次光临')
