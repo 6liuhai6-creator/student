@@ -34,7 +34,7 @@ while goin_system =='y':
     
     
 
-    chooth = input('查看、创建、更改或删除学生信息(a/b/c/d) ')
+    chooth = input('\n请选择功能：\na：查看学生\nb：创建学生\nc：修改学生\nd：删除学生\n请输入 a/b/c/d：')
     print('')                                           #查看
     if chooth == 'a':
         name_input = input('请输入学生名 ')
